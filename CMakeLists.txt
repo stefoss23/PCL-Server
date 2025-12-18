@@ -18,6 +18,6 @@ set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS} -Wno-unused-parameter")
 #install(DIRECTORY include/ DESTINATION include)
 
 #Start test setup
-#enable_testing()
-#add_subdirectory(tests)
+enable_testing()
+add_subdirectory(cpptests)
 #End test setup
