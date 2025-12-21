@@ -54,8 +54,8 @@ void _assertVectorEqual(vector<int> expected, vector<int> value, string function
 void test_prime() {
    
    assertVectorEqual(vector<int>({4, 3, 6}), CreatePrimes(1));
-   /*_assertEqual({2}, CreatePrimes(2));
-   _assertEqual({2, 3, 5, 7, 11, 13, 17, 19, 23}, CreatePrimes(25));*/
+   assertVectorEqual(vector<int>({2}), CreatePrimes(2));
+   assertVectorEqual(vector<int>({2, 3, 5, 7, 11, 13, 17, 19, 23}), CreatePrimes(25));
 }
 
 
