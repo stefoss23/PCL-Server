@@ -40,9 +40,9 @@ void assertEqual(vector<int> expected, vector<int> value, int line) {
 
 void test_prime() {
    
-   /*assertEqual({}, create_primes(1), __LINE__);
-   assertEqual({2}, create_primes(2), __LINE__);
-   assertEqual({2, 3, 5, 7, 11, 13, 17, 19, 23}, create_primes(25), __LINE__);   */
+   assertEqual({}, CreatePrimes(1), __LINE__);
+   assertEqual({2}, CreatePrimes(2), __LINE__);
+   assertEqual({2, 3, 5, 7, 11, 13, 17, 19, 23}, CreatePrimes(25), __LINE__);
 }
 
 

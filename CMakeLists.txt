@@ -13,7 +13,7 @@ include_directories(include)
 #set(TEST_DIR ${CMAKE_SOURCE_DIR}/test-data)
 
 add_library(cserv_core SHARED  src/one.cpp
-
+                               src/prime.cpp
            )
            
 #target_link_libraries(rads pthread)
