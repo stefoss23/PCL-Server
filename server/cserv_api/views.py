@@ -6,8 +6,9 @@ from pycserv import *
 def number(request):
     return HttpResponse(func())
     
-def primes(request):
-    
-    num = int(request.GET.get('num'))
-
-    return HttpResponse(json.dumps(get_primes(num)))
+def primes(request):        
+    try:
+       num = int(request.GET.get('num'))
+       return HttpResponse(json.dumps(get_primes(num)))
+    except:
+       return HttpResponse(None)
