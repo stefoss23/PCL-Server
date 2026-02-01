@@ -1,26 +1,13 @@
-#include <math.h>
-#include <iostream>
-#include <exception>
-#include <complex>
-
 #include <Python.h>
 #include <pybind11/pybind11.h>
-#include <pybind11/numpy.h>
+#include <pybind11/stl.h>
 
+#include <cserv_core/prime.hpp>
 
-
-using namespace std;
-/*using namespace radsim;
-using namespace std::complex_literals;*/
-
-
-int func() {
-   return 5;
-}
-
+using namespace cserv_core;
 
 PYBIND11_MODULE(cserv_python, m) {
 
-  m.def("func", &func);
+  m.def("primes", &CreatePrimes);
 
 }
