@@ -11,7 +11,10 @@ set(PYBIND11_PYTHON_VERSION 3.6)
 #set(PYTHON_TEST_DIR ${CMAKE_SOURCE_DIR}/python/tests)
 #set(PYTHON_EXAMPLE_DIR ${CMAKE_SOURCE_DIR}/python/examples)
 
-#add_subdirectory(lib)
+set(PYTHON_DIR ${CMAKE_SOURCE_DIR}/python)
+set(PYTHON_BINARY_DIR ${CMAKE_BINARY_DIR}/python/cxx)
+
+add_subdirectory(pycserv)
 add_subdirectory(cxx)
 #add_subdirectory(tests)
 
