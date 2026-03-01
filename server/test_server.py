@@ -13,16 +13,11 @@ class ServerTester(unittest.TestCase):
         print("-------", os.getcwd())
         subprocess.run(['timeout', '20s', 'python3', '../../server/manage.py', 'runserver'])
 
-    def startProcess(self):
-        p1 = multiprocessing.Process(target=startServer)
-        p1.start()
-        time.sleep(5)
-
     @classmethod
     def setUpClass(cls):
         p1 = multiprocessing.Process(target=cls.startServer)
         p1.start()
-        time.sleep(5)
+        time.sleep(2)
 
     def test1(self):
         url = 'http://127.0.0.1:8000/primes/?num=20'
