@@ -12,3 +12,7 @@ def primes(request):
        return HttpResponse(json.dumps(get_primes(num)))
     except:
        return HttpResponse(None)
+       
+def sfault(request):
+    print("--- Segfault request")
+    return HttpResponse(None)
