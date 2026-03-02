@@ -4,7 +4,7 @@ import json
 from .cserv_python import *
 
 def number(request):
-    return HttpResponse(func())
+    return HttpResponse("Simple request called.")
     
 def primes(request):
     try:
