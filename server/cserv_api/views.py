@@ -25,5 +25,10 @@ def ex1(request):
     
 def ex2(request):
     print("--- Exceptiom request 2")
-    raise ex()
+    ex()
     return HttpResponse(None)
+    
+def memloss(request):
+    print("--- Exceptiom request 2")
+    raise ex()
+    return HttpResponse(None)    
