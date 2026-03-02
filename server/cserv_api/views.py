@@ -17,3 +17,8 @@ def sfault(request):
     print("--- Segfault request")
     segfault();
     return HttpResponse(None)
+    
+def ex1(request):
+    print("--- Exceptiom request 1")
+    raise Exception("Python exception called")
+    return HttpResponse(None)
