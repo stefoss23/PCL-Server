@@ -33,6 +33,6 @@ python3 manage.py runserver
 ```
 
 Example URL: http://127.0.0.1:8000/primes/?num=20
-Will return prime numbers 2 to 20.
+Will return prime numbers 2 to 20. The origin is the function *src/prime.cpp*.
 
 
