@@ -6,6 +6,7 @@ The reason for choosing C++ is its potential for faster and efficient data proce
 However, C++ has little framework support regarding server development.
 
 Therefore, the idea is to use Python (Django in this case) for the basic server operations. The python server then taps into a C++ library for the data processing.
+Another benefit with this would also to combine the powerful machine-learning/artifical intelligence packages in Python with C++.
 
 Pybind11 is using a binding between the c++ library files and the Python server.
 
