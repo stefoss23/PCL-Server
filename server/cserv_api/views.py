@@ -3,7 +3,7 @@ from django.http import HttpResponse
 import json
 from .cserv_python import *
 
-def number(request):
+def simple(request):
     return HttpResponse("Simple request called.")
     
 def primes(request):
